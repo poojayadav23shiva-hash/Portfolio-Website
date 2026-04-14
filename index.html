@@ -29,6 +29,53 @@
         <h2>Contact</h2>
         <p>Email: poojayadav23.shiva@email.com</p>
     </section>
+    <section id="contact" style="padding:50px; text-align:center; background:#f4f4f4;">
+  
+  <h2>Contact / Register</h2>
 
+  <form id="form" style="max-width:400px; margin:auto;">
+    
+    <input type="text" id="name" placeholder="Full Name" required style="width:100%; padding:10px; margin:10px 0;">
+    
+    <input type="email" id="email" placeholder="Email" required style="width:100%; padding:10px; margin:10px 0;">
+    
+    <input type="password" id="password" placeholder="Password" required style="width:100%; padding:10px; margin:10px 0;">
+    
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required style="width:100%; padding:10px; margin:10px 0;">
+    
+    <p id="errorMsg" style="color:red;"></p>
+
+    <button type="submit" style="padding:10px 20px; background:black; color:white;">
+      Submit
+    </button>
+
+  </form>
+
+</section>
+<script>
+const form = document.getElementById("form");
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirmPassword");
+const errorMsg = document.getElementById("errorMsg");
+
+const pattern = /^(?=.[A-Z])(?=.[\W_]).{8,}$/;
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  if (!pattern.test(password.value)) {
+    errorMsg.textContent = "Password must be 8+ chars, include uppercase & special character!";
+    return;
+  }
+
+  if (password.value !== confirmPassword.value) {
+    errorMsg.textContent = "Passwords do not match!";
+    return;
+  }
+
+  errorMsg.textContent = "";
+  alert("Submitted Successfully ✅");
+});
+</script>
 </body>
 </html>
