@@ -11,6 +11,7 @@ Salary DECIMAL(10,2));
 
 DROP TABLE employeeinfo;
 
+-- insert by direct method
 INSERT INTO employeeinfo( EmpID, Name, Age, EmailId, PhoneNo, Salary)
 VALUES
 (1, 'Amit Sharma', 28, 'amit.sharma@example.com', '+91-9876543210', 55000.00),
@@ -18,6 +19,8 @@ VALUES
 (3, 'Rahul Mehta', 26, 'rahul.mehta@example.com', '+91-9988776655', 48000.00),
 (4, 'Sneha Kapoor', 30, 'sneha.kapoor@example.com', '+91-9765432109', 70000.75),
 (5, 'Vikram Joshi', 35, 'vikram.joshi@example.com', '+91-9345678901', 80000.00);
+
+-- insert by parameter
 INSERT INTO employeeinfo( EmpID, Name, Age, EmailId, PhoneNo, Salary)
 VALUES
 (1, 'Amit Sharma', 28, 'amit.sharma@example.com', '+91-9876543210', 55000.00);
@@ -29,12 +32,14 @@ SET @EmailId = 'rohit@gmail.com';
 SET @PhoneNo = '9876543210';
 SET @Salary = 55000;
 
+-- insert by select statement
 INSERT INTO employeeinfo (EmpID, Name, Age, EmailId, PhoneNo, Salary)
 VALUES (@EmpID, @Name, @Age, @EmailId, @PhoneNo, @Salary);
 
 INSERT INTO employeeinfo (EmpID, Name, Age, EmailId, PhoneNo, Salary)
 SELECT 7, 'Aman Singh', 27, 'aman@gmail.com', '9999999999', 60000;
 
+-- backup
 CREATE TABLE employee_backup AS
 SELECT * FROM employeeinfo;
 SELECT * FROM employee_backup;
