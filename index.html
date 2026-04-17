@@ -1,88 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pooja Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header style="background:black; padding:15px; text-align:center;">
-  <a href="#home" style="color:white; margin:10px;">Home</a>
-  <a href="#contact" style="color:white; margin:10px;">Contact</a>
-</header>
+   <header>
+    <nav>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="https://drive.google.com/file/d/1Sbh08uZDYJh8cTKwGCoFILaKmhiY1dth/view?usp=drivesdk" target="_blank">RESUME</a></li>
+    </ul>
+    </nav>
+   </header> 
+<div class="main">
+    <div class="aboutme">
+     <div class="about-text">
+        <h2>Hi, I'm Pooja</h2>
+            <h2>Frontend Developer </h2>
+<p>
+    I build responsive and user- friendly<br>
+    websites using HTML, CSS and Javascript.<br>
+    Currently learning React and improving my<br>
+     development skills.
+</p>
+     </div>
+    </div>
+</div>
+<!-- About section-->
+<section id="about">
+      <h2>About Me</h2>
+        <p>
+            I am Pooja, currently pursuing a Bachelors of
+            Computer Application (BCA)<br> from Post Graduate
+            Government College for Girls, Sector-42/C, Chandigarh.<br>
+            And I am in my second year. I have a interest in Web Development<br>
+            and enjoy builiding responsive and user-friendly websites.
+        </p>
+        <p>
+            I have hands-on experience with HTML, CSS, and JavaScript, <br>and I am currently learning React to enhace my frontend <br>
+            development skills. I actievly work on projects to improve my practical<br> knowledge and
+            strengthen my problem-solving abilities.
+        </p>
+        <p>
+            I also have knowledge of programming languages such as C, C++, and Python,<br> along
+            with Database concepts.
+        </p>
+        <p>
+            I have implemented various SQL operations such as data <br>
+            insertion, updating, deletion, JOINs, and other query techniques in my projects, <br>
+            which are available in my projects section.
+        </p>
+  </section>
+  <!-- Projects Section-->
+  <section id="projects">
+    <h2>My Projects</h2>
+     <div class="projects-container">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This is my personal portfolio website built using HTML and CSS with responsive design and smooth navigation to showcase my skills and projects.</p>
+            <a href="https://poojayadav23shiva-hash.github.io/Portfolio-Website/" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>CRUD Database Project</h3>
+            <p>A database project where I implemented various SQL operations like Insert, Update, Delete, and Joins.
+            </p>
+            <a href="https://github.com/poojayadav23shiva-hash/Portfolio-Website/blob/main/chemicalcompany_db.sql" target="_blank">View Project</a>
+        </div>
+        </div>
+     </div>
+  </section>
+     <!-- CONTACT SECTION (SEPARATE) -->
+  <section id="contact">
+    <h2>Contact Me</h2>
 
-    <header>
-        <h1>Pooja</h1>
-        <p>BCA Student | Aspiring Developer</p>
-    </header>
-<section id="home" style="padding:50px; text-align:center;">
-  <h1>My Portfolio</h1>
-  <p>Welcome to my website</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/pooja-yadav-371416403/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/poojayadav23shiva-hash/Portfolio-Website" target="_blank"> <i class="fab fa-github"></i></a>
+      <a href="mailto: poojayadav23.shiva@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/9417723697" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="tel: 9417723697"><i class="fas fa-phone"></i></a>
+    </div>
 </section>
-    <section>
-        <h2>About Me</h2>
-        <p>I am a BCA student with interest in programming and web development.</p>
-    </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>C / C++</li>
-            <li>Python</li>
-            <li>HTML, CSS</li>
-        </ul>
-    </section>
+<!-- skills SECTION (SEPARATE) -->
+<section id="skills">
+  <h2>My Skills</h2>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: poojayadav23.shiva@email.com</p>
-    </section>
-    <section id="contact" style="padding:50px; text-align:center; background:#f4f4f4;">
-  
-  <h2>Contact / Register</h2>
+  <div class="skills-grid">
 
-  <form id="form" style="max-width:400px; margin:auto;">
-    
-    <input type="text" id="name" placeholder="Full Name" required style="width:100%; padding:10px; margin:10px 0;">
-    
-    <input type="email" id="email" placeholder="Email" required style="width:100%; padding:10px; margin:10px 0;">
-    
-    <input type="password" id="password" placeholder="Password" required style="width:100%; padding:10px; margin:10px 0;">
-    
-    <input type="password" id="confirmPassword" placeholder="Confirm Password" required style="width:100%; padding:10px; margin:10px 0;">
-    
-    <p id="errorMsg" style="color:red;"></p>
+    <div class="skill-card">
+      <i class="fab fa-html5"></i>
+      <h3>HTML</h3>
+    </div>
 
-    <button type="submit" style="padding:10px 20px; background:black; color:white;">
-      Submit
-    </button>
+    <div class="skill-card">
+      <i class="fab fa-css3-alt"></i>
+      <h3>CSS</h3>
+    </div>
 
-  </form>
+    <div class="skill-card">
+      <i class="fab fa-js"></i>
+      <h3>JavaScript</h3>
+    </div>
+<!--
+    <div class="skill-card">
+      <i class="fab fa-react"></i>
+      <h3>React</h3>
+    </div>
+-->
+    <div class="skill-card">
+      <i class="fas fa-code"></i>
+      <h3>C / C++</h3>
+    </div>
 
+    <div class="skill-card">
+      <i class="fab fa-python"></i>
+      <h3>Python</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-database"></i>
+      <h3>SQL</h3>
+    </div>
+
+  </div>
 </section>
-<script>
-const form = document.getElementById("form");
-const password = document.getElementById("password");
-const confirmPassword = document.getElementById("confirmPassword");
-const errorMsg = document.getElementById("errorMsg");
 
-const pattern = /^(?=.[A-Z])(?=.[\W_]).{8,}$/;
-
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  if (!pattern.test(password.value)) {
-    errorMsg.textContent = "Password must be 8+ chars, include uppercase & special character!";
-    return;
-  }
-
-  if (password.value !== confirmPassword.value) {
-    errorMsg.textContent = "Passwords do not match!";
-    return;
-  }
-
-  errorMsg.textContent = "";
-  alert("Submitted Successfully ✅");
-});
-</script>
 </body>
 </html>
